@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Leia + Livros</title>
+<link rel="icon" type="image/png" href="logo.png" />
+<meta charset="UTF-8">
+<meta name="description" content="Buscador de livros em várias fontes da internet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+a { color: #000; }
+h1 { text-align: center; font-size: 22px; }
+p { text-align: center; font-size: 14px; }
+select { text-align: center; font-size: 16px; height: 30px; width: 200px; border: 1px solid grey; border-radius: 2px; }
+input { text-align: center; height: 40px; padding: 10px; font-size: 17px; border: 1px solid grey; width: 100%; border-radius: 10px; }
+.center { width: 350px; height: 250px; position: absolute; top: -100px; bottom: 0; left: 0; right: 0; margin: auto; text-align: center; }
+</style>
+</head>
+<body>
+<div class="center">
+<img src="logo.png" height="64px" height="64px"></a>
+<h1>Leia + Livros</h1>
+<p>Buscador de livros em várias fontes da internet</p>
+<form name="searchform" onSubmit="return dosearch();">
+<select name="sengines">
+<option value="https://www.estantevirtual.com.br/busca?q=">Estante Virtual</option>
+<option value="https://www.amazon.com.br/s?k=">Amazon Brasil</option>
+<option value="https://www.google.com/search?hl=pt-BR&tbm=shop&q=">Google Shopping</option>
+<option value="https://www.skoob.com.br/livro/lista/">Skoob</option>
+<option value="https://www.goodreads.com/search?utf8=Ã¢Å“â€œ&query=">Goodreads</option>
+</select>
+<br><br><input type="search" name="searchterms" placeholder="Digite um título ou autor...">
+</form>
+<p>Criado por <a href="mailto:sebomelivro@yahoo.com?subject=Leia + Livros">Andrews</a>, livreiro do <a href="https://sebomelivro.github.io">Sebomelivro</a></p>
+</div>
+<script type="text/javascript">
+function dosearch() {
+var sf=document.searchform;
+var submitto = sf.sengines.options[sf.sengines.selectedIndex].value + escape(sf.searchterms.value);
+window.location.href = submitto;
+return false;
+}
+</script>
+</body>
+</html>
