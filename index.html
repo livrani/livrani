@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Livrani</title>
-<link rel="icon" type="image/png" href="logo.png" />
 <meta charset="UTF-8">
+<title>Livrani</title>
 <meta name="description" content="Buscador de livros em várias fontes da internet">
+<link rel="icon" type="image/png" href="logo.png" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 a { color: #000; }
@@ -39,7 +39,7 @@ button {text-align: center; margin-left: 4px; margin-right: 4px; font-size: 16px
 <script type="text/javascript">
 function dosearch() {
 var sf=document.searchform;
-var submitto = sf.sengines.options[sf.sengines.selectedIndex].value + escape(sf.searchterms.value);
+var submitto = sf.sengines.options[sf.sengines.selectedIndex].value + (sf.searchterms.value);
 window.location.href = submitto;
 return false;
 }
