@@ -40,7 +40,7 @@ button {text-align: center; margin-left: 4px; margin-right: 4px; font-size: 16px
 function dosearch() {
 var sf=document.searchform;
 var submitto = sf.sengines.options[sf.sengines.selectedIndex].value + (sf.searchterms.value);
-window.location.href = submitto;
+window.open(submitto);
 return false;
 }
 </script>
