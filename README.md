@@ -1,1 +1,1 @@
-Pesquise preços de livros em fontes selecionadas
+Pesquise preços de livros em sites selecionados
