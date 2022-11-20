@@ -1,1 +1,1 @@
-Pesquise preços, avaliações e disponilidade de livros em bibliotecas públicas
+Pesquise preços de livros em fontes selecionadas
